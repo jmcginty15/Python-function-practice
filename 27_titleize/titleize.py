@@ -1,0 +1,12 @@
+def titleize(phrase):
+    """Return phrase in title case (each word capitalized).
+
+        >>> titleize('this is awesome')
+        'This Is Awesome'
+
+        >>> titleize('oNLy cAPITALIZe fIRSt')
+        'Only Capitalize First'
+    """
+    phrase_list = phrase.split()
+    titleized_list = [word.lower().capitalize() for word in phrase_list]
+    return ' '.join(titleized_list)
